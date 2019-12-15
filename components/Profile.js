@@ -11,7 +11,6 @@ const Profile = () => {
         <View style={styles.main}>
             <ProfileCover/>
             <ProfileBody/>
-            <BaseNavBar/>
         </View>
     );
 };

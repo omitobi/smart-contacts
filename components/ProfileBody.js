@@ -1,12 +1,15 @@
 import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
+import BaseNavBar from "./BaseNavBar";
+import ProfileBodyMain from "./ProfileBodyMain";
 
 const ProfileBody = () => {
     return (
         <View style={styles.main}>
-            <Text style={styles.sub}>
-                Our Profile Body
-            </Text>
+            <View style={styles.sub}>
+                <ProfileBodyMain/>
+                <BaseNavBar/>
+            </View>
         </View>
     );
 };
@@ -15,12 +18,13 @@ export default ProfileBody;
 
 const styles = StyleSheet.create({
     main: {
-        flex: 7,
-        backgroundColor: "violet",
+        flex: 10,
+        backgroundColor: "white",
         borderTopRightRadius: 30,
         borderTopLeftRadius: 30,
     },
     sub: {
+        flex: 1,
         marginTop: 30,
     }
 });
