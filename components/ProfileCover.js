@@ -1,12 +1,30 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
+import CoverHeader from "./CoverHeader";
+import CoverIntro from "./CoverIntro";
+import CoverImage from "./CoverImage";
 
 const ProfileCover = () => {
     return (
-      <View>
-          <Text>My Profile</Text>
-      </View>
+        <View style={styles.main}>
+            <View style={styles.sub}>
+                <CoverHeader/>
+                <CoverIntro/>
+                <CoverImage/>
+            </View>
+        </View>
     );
 };
 
 export default ProfileCover;
+
+const styles = StyleSheet.create({
+    main: {
+        flex: 5,
+        flexDirection: "column",
+        backgroundColor: "steelblue",
+    },
+    sub: {
+        flex: 1,
+    }
+});

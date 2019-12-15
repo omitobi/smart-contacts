@@ -2,15 +2,16 @@ import React, {useState} from 'react';
 import {StyleSheet, Text, View} from "react-native";
 import ProfileCover from "./ProfileCover";
 import ProfileBody from "./ProfileBody";
+import BaseNavBar from "./BaseNavBar";
 
 const Profile = () => {
     const [welcome, setWelcome] = useState("I am Smart Contacts!");
 
     return (
-        <View>
+        <View style={styles.main}>
             <ProfileCover/>
-            <Text style={styles.welcome}>{welcome}</Text>
             <ProfileBody/>
+            <BaseNavBar/>
         </View>
     );
 };
@@ -18,9 +19,13 @@ const Profile = () => {
 export default Profile;
 
 const styles = StyleSheet.create({
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
+    main: {
+        // flex: 1,
+        // flexDirection: "row",
+        // justifyContent: "center",
+        // alignItems: "stretch",
+        flex: 1,
+        flexDirection: "column",
+        justifyContent: 'space-evenly',
     }
 });

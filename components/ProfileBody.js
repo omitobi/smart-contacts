@@ -1,9 +1,9 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, StyleSheet, Text} from 'react-native';
 
 const ProfileBody = () => {
     return (
-        <View>
+        <View style={styles.main}>
             <Text>
                 Our Profile Body
             </Text>
@@ -12,3 +12,10 @@ const ProfileBody = () => {
 };
 
 export default ProfileBody;
+
+const styles = StyleSheet.create({
+    main: {
+        flex: 7,
+        backgroundColor: "violet",
+    }
+});
