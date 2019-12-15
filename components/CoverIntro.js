@@ -20,11 +20,13 @@ const styles = StyleSheet.create({
     },
     welcome: {
         fontSize: 14,
+        color: "white"
         // textAlign: "left",
         // margin: 10,
     },
     name: {
         fontSize: 24,
+        color: "white"
         // textAlign: "left",
         // margin: 5,
     }
