@@ -27,5 +27,6 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: "column",
         justifyContent: 'space-evenly',
+        backgroundColor: "steelblue",
     }
 });

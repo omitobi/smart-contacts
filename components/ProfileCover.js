@@ -22,7 +22,6 @@ const styles = StyleSheet.create({
     main: {
         flex: 5,
         flexDirection: "column",
-        backgroundColor: "steelblue",
     },
     sub: {
         flex: 1,

@@ -4,7 +4,7 @@ import {View, StyleSheet, Text} from 'react-native';
 const ProfileBody = () => {
     return (
         <View style={styles.main}>
-            <Text>
+            <Text style={styles.sub}>
                 Our Profile Body
             </Text>
         </View>
@@ -17,5 +17,10 @@ const styles = StyleSheet.create({
     main: {
         flex: 7,
         backgroundColor: "violet",
+        borderTopRightRadius: 30,
+        borderTopLeftRadius: 30,
+    },
+    sub: {
+        marginTop: 30,
     }
 });

@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: "row",
         justifyContent: "space-between",
-        padding: 2,
+        marginRight: 10,
+        marginLeft: 10,
     },
     headerPlus: {
         // flex: 1,

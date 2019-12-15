@@ -14,7 +14,9 @@ export default CoverIntro;
 
 const styles = StyleSheet.create({
     main: {
-      flex: 4,
+        flex: 4,
+        marginRight: 10,
+        marginLeft: 10,
     },
     welcome: {
         fontSize: 14,
