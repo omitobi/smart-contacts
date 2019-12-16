@@ -5,13 +5,13 @@ const BaseNavBar = () => {
     return (
         <View style={styles.main}>
             <View style={styles.sub}>
-                <Image source={require('./../assets/images/baseline_home_black_18dp.png')} />
-                <Image source={require('./../assets/images/baseline_favorite_border_black_18dp.png')} />
-                <View style={styles.accountAdder}>
+                <Image style={styles.navButton} source={require('./../assets/images/baseline_home_black_18dp.png')} />
+                <Image style={styles.navButton} source={require('./../assets/images/baseline_favorite_border_black_18dp.png')} />
+                <View style={[styles.accountAdder, styles.navButton]}>
                     <Image source={require('./../assets/images/baseline_person_add_white_18dp.png')} />
                 </View>
-                <Image source={require('./../assets/images/baseline_search_black_18dp.png')} />
-                <Image source={require('./../assets/images/baseline_account_circle_black_18dp.png')} />
+                <Image style={styles.navButton} source={require('./../assets/images/baseline_search_black_18dp.png')} />
+                <Image style={styles.navButton} source={require('./../assets/images/baseline_account_circle_black_18dp.png')} />
             </View>
         </View>
     )
@@ -43,5 +43,13 @@ const styles = StyleSheet.create({
     },
     accountAdder: {
         backgroundColor: "#9932cc"
-    }
+    },
+    navButton: {
+        borderRadius: 10,
+        margin: 8,
+        alignSelf: "center",
+        alignContent: "center",
+        height: 30,
+        width: 30
+    },
 });
