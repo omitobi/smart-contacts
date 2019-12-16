@@ -1,12 +1,18 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import CoverImage from "./CoverImage";
 
 const CoverIntro = () => {
     return (
         <View style={styles.main}>
-            <Text style={styles.welcome}>Welcome Back!</Text>
-            <Text style={styles.name}>Debra</Text>
-            <Text style={styles.name}>Rosenblatt</Text>
+            <View style={styles.sub}>
+                <CoverImage/>
+                <View>
+                    <Text style={styles.welcome}>Welcome Back!</Text>
+                    <Text style={styles.name}>John</Text>
+                    <Text style={styles.name}>Foo Doe</Text>
+                </View>
+            </View>
         </View>
     )
 };
@@ -20,6 +26,10 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         marginTop: 20,
         textAlign: "left",
+    },
+    sub: {
+        flex: 1,
+        flexDirection: "row"
     },
     welcome: {
         fontSize: 16,

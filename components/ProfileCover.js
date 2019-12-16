@@ -10,7 +10,6 @@ const ProfileCover = () => {
             <View style={styles.sub}>
                 <CoverHeader/>
                 <CoverIntro/>
-                <CoverImage/>
             </View>
         </View>
     );

@@ -1,10 +1,12 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Image} from 'react-native';
 
 const CoverImage = () => {
     return (
         <View style={styles.main}>
-            <Text>Image</Text>
+            <Image source={require('./../assets/images/omitobisam.jpg')}
+                   style={[styles.img, {width: 100, height: 110}]}
+            />
         </View>
     )
 };
@@ -13,9 +15,13 @@ export default CoverImage;
 
 const styles = StyleSheet.create({
     main: {
-        flex: 4,
         flexDirection: "column",
         marginRight: 10,
         marginLeft: 10,
     },
+    img: {
+        borderWidth: 4,
+        borderColor: "white",
+        borderRadius: 10,
+    }
 });
