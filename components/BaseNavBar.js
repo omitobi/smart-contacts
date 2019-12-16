@@ -11,7 +11,9 @@ const BaseNavBar = () => {
                     <Image source={require('./../assets/images/baseline_person_add_white_18dp.png')} />
                 </View>
                 <Image style={styles.navButton} source={require('./../assets/images/baseline_search_black_18dp.png')} />
-                <Image style={styles.navButton} source={require('./../assets/images/baseline_account_circle_black_18dp.png')} />
+                <Image source={require('./../assets/images/omitobisam.jpg')}
+                       style={[styles.navButton, {width: 30, height: 30}]}
+                />
             </View>
         </View>
     )

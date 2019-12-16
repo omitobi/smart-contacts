@@ -8,7 +8,7 @@ const CoverIntro = () => {
             <View style={styles.sub}>
                 <CoverImage/>
                 <View>
-                    <Text style={styles.welcome}>Welcome Back!</Text>
+                    <Text style={styles.welcome}>Welcome back!</Text>
                     <Text style={styles.name}>John</Text>
                     <Text style={styles.name}>Foo Doe</Text>
                 </View>
