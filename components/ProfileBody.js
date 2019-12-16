@@ -19,12 +19,12 @@ export default ProfileBody;
 const styles = StyleSheet.create({
     main: {
         flex: 10,
+        // backgroundColor: "#f0f1f3",
         backgroundColor: "white",
         borderTopRightRadius: 30,
         borderTopLeftRadius: 30,
     },
     sub: {
         flex: 1,
-        marginTop: 30,
     }
 });
