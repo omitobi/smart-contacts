@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         marginRight: 10,
         marginLeft: 10,
         minHeight: 22,
-        // marginTop: 3,
+        marginTop: 5,
     },
     headerPlus: {
         // flex: 1,

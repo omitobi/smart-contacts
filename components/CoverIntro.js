@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
         marginRight: 10,
         marginLeft: 10,
         marginTop: 20,
+        marginBottom: 20,
         textAlign: "left",
     },
     sub: {
@@ -37,7 +38,7 @@ const styles = StyleSheet.create({
         // fontWeight: "bold",
     },
     name: {
-        fontSize: 40,
+        fontSize: 35,
         color: "white",
         fontWeight: "bold",
     }

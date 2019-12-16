@@ -16,7 +16,7 @@ export default CoverImage;
 const styles = StyleSheet.create({
     main: {
         flexDirection: "column",
-        marginRight: 10,
+        marginRight: 15,
         marginLeft: 10,
     },
     img: {
