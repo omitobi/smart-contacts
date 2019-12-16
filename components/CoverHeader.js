@@ -26,13 +26,16 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         marginRight: 10,
         marginLeft: 10,
+        minHeight: 22,
+        // marginTop: 3,
     },
     headerPlus: {
         // flex: 1,
     },
     headerText: {
+        // fontWeight: "bold",
         textAlign: "center",
-        fontSize: 16,
+        fontSize: 20,
         color: "white"
     },
     headerMenu: {

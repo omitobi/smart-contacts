@@ -4,8 +4,9 @@ import {View, Text, StyleSheet} from 'react-native';
 const CoverIntro = () => {
     return (
         <View style={styles.main}>
-            <Text style={styles.welcome}>Welcome Back</Text>
-            <Text style={styles.name}>John Doe</Text>
+            <Text style={styles.welcome}>Welcome Back!</Text>
+            <Text style={styles.name}>Debra</Text>
+            <Text style={styles.name}>Rosenblatt</Text>
         </View>
     )
 };
@@ -17,17 +18,17 @@ const styles = StyleSheet.create({
         flex: 4,
         marginRight: 10,
         marginLeft: 10,
+        marginTop: 20,
+        textAlign: "left",
     },
     welcome: {
-        fontSize: 14,
-        color: "white"
-        // textAlign: "left",
-        // margin: 10,
+        fontSize: 16,
+        color: "white",
+        // fontWeight: "bold",
     },
     name: {
-        fontSize: 24,
-        color: "white"
-        // textAlign: "left",
-        // margin: 5,
+        fontSize: 40,
+        color: "white",
+        fontWeight: "bold",
     }
 });
