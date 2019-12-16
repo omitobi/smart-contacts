@@ -27,11 +27,12 @@ const styles = StyleSheet.create({
         flexDirection: "column",
         borderTopRightRadius: 30,
         borderTopLeftRadius: 30,
-        elevation: 1,
+        elevation: 5,
         shadowOffset: { width: 0, height: 2 },
         shadowColor: "#000",
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
+        backgroundColor: "white",
     },
     sub: {
         flex: 1,
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         marginRight: 10,
         marginBottom: 10,
-        marginTop: 10
+        marginTop: 10,
     },
     accountAdder: {
         backgroundColor: "#9932cc"

@@ -1,5 +1,6 @@
 import React from "react";
 import {StyleSheet, View, Text} from "react-native";
+import ContactList from "./ContactList";
 
 const ProfileBodyMain = () => {
     return (
@@ -20,7 +21,7 @@ const ProfileBodyMain = () => {
                     </View>
                 </View>
                 <View style={styles.list}>
-                    <Text>List of Contacts</Text>
+                    <ContactList />
                 </View>
             </View>
         </View>
@@ -60,6 +61,6 @@ const styles = StyleSheet.create({
         shadowRadius: 3.84,
     },
     list: {
-        flex: 3,
+        flex: 4,
     }
 });
