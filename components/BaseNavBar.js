@@ -1,15 +1,17 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Image} from 'react-native';
 
 const BaseNavBar = () => {
     return (
         <View style={styles.main}>
             <View style={styles.sub}>
-                <Text>Home</Text>
-                <Text>About</Text>
-                <Text>New</Text>
-                <Text>Search</Text>
-                <Text>Profile</Text>
+                <Image source={require('./../assets/images/baseline_home_black_18dp.png')} />
+                <Image source={require('./../assets/images/baseline_favorite_border_black_18dp.png')} />
+                <View style={styles.accountAdder}>
+                    <Image source={require('./../assets/images/baseline_person_add_white_18dp.png')} />
+                </View>
+                <Image source={require('./../assets/images/baseline_search_black_18dp.png')} />
+                <Image source={require('./../assets/images/baseline_account_circle_black_18dp.png')} />
             </View>
         </View>
     )
@@ -23,21 +25,23 @@ const styles = StyleSheet.create({
         flexDirection: "column",
         borderTopRightRadius: 30,
         borderTopLeftRadius: 30,
-        elevation:4,
-        shadowOffset: { width: 5, height: 5 },
-        shadowColor: "grey",
-        shadowOpacity: 0.5,
-        shadowRadius: 10,
-        borderColor: "grey",
-        borderWidth: 3
+        elevation: 1,
+        shadowOffset: { width: 0, height: 2 },
+        shadowColor: "#000",
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
     },
     sub: {
         flex: 1,
         flexDirection: "row",
         justifyContent: "space-between",
+        alignItems: "center",
         marginLeft: 10,
         marginRight: 10,
         marginBottom: 10,
         marginTop: 10
+    },
+    accountAdder: {
+        backgroundColor: "#9932cc"
     }
 });
