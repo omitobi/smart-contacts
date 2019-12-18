@@ -62,7 +62,8 @@ const Item = ({title}) => {
 const ContactList = () => {
     return (
         <View style={styles.container}>
-            <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 10}}>My Contacts</Text>
+            {/* <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 10}}>My Contacts</Text> */}
+
             <SafeAreaView>
                 <FlatList
                     data={DATA}

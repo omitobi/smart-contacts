@@ -20,6 +20,7 @@ const ProfileBodyMain = () => {
                         <Text style={{ fontSize: 12, color: "grey", opacity: 0.5}}>Recent</Text>
                     </View>
                 </View>
+                    
                 <View style={styles.list}>
                     <ContactList />
                 </View>
