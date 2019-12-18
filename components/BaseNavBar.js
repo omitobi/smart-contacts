@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#9932cc"
     },
     navButton: {
-        borderRadius: 10,
+        borderRadius: 20,
         margin: 8,
         alignSelf: "center",
         alignContent: "center",

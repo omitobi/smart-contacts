@@ -4,15 +4,12 @@ import {StyleSheet, Text, View, Image} from "react-native";
 const CoverHeader = () => {
     return (
         <View style={styles.main}>
-            <View style={styles.headerPlus}>
-                <Image source={require('./../assets/images/baseline_post_add_white_18dp.png')} />
-            </View>
-            <Text style={styles.headerText}>
-                My Profile
+            <Text style={styles.headerTextFirst}>
+                SMART
             </Text>
-            <View style={styles.headerMenu}>
-                <Image source={require('./../assets/images/baseline_post_add_white_18dp.png')} />
-            </View>
+            <Text style={styles.headerTextSecond}>
+                Contacts
+            </Text>
         </View>
     )
 };
@@ -23,20 +20,28 @@ const styles = StyleSheet.create({
     main: {
         flex: 1,
         flexDirection: "row",
-        justifyContent: "space-between",
+        justifyContent: "center",
         marginRight: 10,
         marginLeft: 10,
-        minHeight: 22,
-        marginTop: 5,
+        // minHeight: 22,
+        marginTop: 6,
+        borderBottomWidth: 0.17,
+        borderBottomColor: "grey",
     },
     headerPlus: {
         // flex: 1,
     },
-    headerText: {
+    headerTextFirst: {
         // fontWeight: "bold",
         textAlign: "center",
-        fontSize: 20,
-        color: "white"
+        fontSize: 15,
+        color: "white",
+        fontWeight: "bold",
+    },
+    headerTextSecond: {
+        textAlign: "center",
+        fontSize: 15,
+        color: "white",
     },
     headerMenu: {
         // flex: 1,
