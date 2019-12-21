@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {
     SafeAreaView, View, FlatList, StyleSheet, Image, Text, TouchableOpacity
 } from 'react-native';
 import Constants from 'expo-constants';
+import * as Contacts from 'expo-contacts'
+
 
 const DATA = [
     {
@@ -42,6 +44,8 @@ const DATA = [
     },
 ];
 
+
+
 const Item = ({title}) => {
     return (
         <TouchableOpacity style={styles.item}>
@@ -60,16 +64,33 @@ const Item = ({title}) => {
 };
 
 const ContactList = () => {
+    const [contactsData, setContactsData] = useState([]);
+    
+    useEffect(() => {
+            (async () => {
+              const { status } = await Contacts.requestPermissionsAsync();
+              if (status === 'granted') {
+                const { data } = await Contacts.getContactsAsync({
+                  fields: [Contacts.Fields.Emails],
+                });
+        
+                if (data.length > 0) {
+                  setContactsData(data);
+                }
+              }
+            })();
+    }, []);
+
     return (
         <View style={styles.container}>
             {/* <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 10}}>My Contacts</Text> */}
 
             <SafeAreaView>
                 <FlatList
-                    data={DATA}
+                    data={contactsData}
                     renderItem={({item}) => {
                     return (
-                        <Item title={item.title} />
+                        <Item title={item.firstName} />
                     )
                 }}
                     keyExtractor={item => item.id}
