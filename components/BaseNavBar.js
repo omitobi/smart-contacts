@@ -1,19 +1,34 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 
 const BaseNavBar = () => {
     return (
         <View style={styles.main}>
             <View style={styles.sub}>
-                <Image style={styles.navButton} source={require('./../assets/images/baseline_home_black_18dp.png')} />
-                <Image style={styles.navButton} source={require('./../assets/images/baseline_favorite_border_black_18dp.png')} />
-                <View style={[styles.accountAdder, styles.navButton]}>
-                    <Image style={{width: 30, height: 30}} source={require('./../assets/images/baseline_person_add_white_18dp.png')} />
-                </View>
-                <Image style={styles.navButton} source={require('./../assets/images/baseline_search_black_18dp.png')} />
-                <Image source={require('./../assets/images/omitobisam.jpg')}
-                       style={[styles.navButton, {width: 30, height: 30}]}
-                />
+                <TouchableOpacity>
+                    <Image style={styles.navButton}
+                           source={require('./../assets/images/baseline_home_black_18dp.png')}/>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Image style={styles.navButton}
+                           source={require('./../assets/images/baseline_favorite_border_black_18dp.png')}/>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => {
+                    console.log('Of course')
+                }}>
+                    <View style={[styles.accountAdder, styles.navButton]}>
+                        <Image style={{width: 30, height: 30}}
+                               source={require('./../assets/images/baseline_person_add_white_18dp.png')}/>
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Image style={styles.navButton}
+                           source={require('./../assets/images/baseline_search_black_18dp.png')}/>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Image source={require('./../assets/images/omitobisam.jpg')}
+                           style={[styles.navButton, {width: 30, height: 30}]}/>
+                </TouchableOpacity>
             </View>
         </View>
     )
@@ -28,7 +43,7 @@ const styles = StyleSheet.create({
         borderTopRightRadius: 30,
         borderTopLeftRadius: 30,
         elevation: 5,
-        shadowOffset: { width: 0, height: 2 },
+        shadowOffset: {width: 0, height: 2},
         shadowColor: "grey",
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
